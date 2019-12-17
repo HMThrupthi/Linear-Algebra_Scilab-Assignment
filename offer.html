@@ -1,0 +1,147 @@
+<?php 
+    start_session();
+?>
+<html>
+    <head>
+        <title>Requests</title>
+        <style>
+             body{
+                background-image:url('par.png');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height:100%;
+                margin:0;
+            }
+            .req{
+                font-family:Cochin;
+                width:1340px;
+                height:100px;
+                background-color:rgb(92, 86, 86);
+                color:white;
+                font-size:20px;
+            }
+            .but{
+                position:absolute;
+                left:1100px;
+                top:210px;
+                width:100px;
+                height:40px;
+                background-color:rgb(74, 230, 241);
+                border-color:rgb(74, 230, 241);
+                border-style: solid;
+                border-radius: 10px;
+                color:black;
+                text-align: center;
+                font-size:30px;
+            }
+            .but:hover{
+                background-color: rgb(85, 233, 142);
+                border-color:rgb(85, 233, 142);
+                border-style: solid;
+                border-radius: 10px;
+            }
+            .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  width:100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+        </style>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <img src="skillcollab.png" style="float:left;height:48px;width:1000px;"/>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">About</a>
+        <a href="index.html">Logout</a>
+        </div>
+        <br/><br/><br/>
+        <span id="d1">Aaaaa</span>
+        <br/><br/>
+        <h1 style="font-family:Trebuchet MS;">Requests</h1>
+        <div class="req">
+                <img src="p7.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:190px;">Name: <span>Shah Rukh Khan</span></span>
+                <span style="position:absolute;left:120px;top:220px;">Looking For: <span>Illustrator</span></span>
+                <a href="#"><div class="but" style="position:absolute;left:1120px;top:195px;">Accept</div></a>
+        </div>
+        <br/>
+        <div class="req">
+                <img src="p8.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:310px;">Name: <span>Madhuri Dixit</span></span>
+                <span style="position:absolute;left:120px;top:340px;">Looking For: <span>C Programming Enthusiast</span></span>
+                <a href="#"><div class="but" style="position:absolute;left:1120px;top:315px;">Accept</div></a>
+        </div>
+        <br/>
+        <div class="req">
+                <img src="p9.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:430px;">Name: <span>Hrithik Roshan</span></span>
+                <span style="position:absolute;left:120px;top:470px;">Looking For: <span>Full Stack Developer</span></span>
+                <a href="#"><div class="but" style="position:absolute;left:1120px;top:435px;">Accept</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img src="p10.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:540px;">Name: <span>Aishwarya Rai</span></span>
+            <span style="position:absolute;left:120px;top:580px;">Looking For: <span>Beta Reader</span></span>
+            <a href="#"><div class="but" style="position:absolute;left:1120px;top:550px;">Accept</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img src="p11.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:660px;">Name: <span>Salman Khan</span></span>
+            <span style="position:absolute;left:120px;top:700px;">Looking For: <span>Video Editor</span></span>
+            <a href="#"><div class="but" style="position:absolute;left:1120px;top:670px;">Accept</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img src="p12.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:780px;">Name: <span>Akshay Kumar</span></span>
+            <span style="position:absolute;left:120px;top:820px;">Looking For: <span>Tally Accountant</span></span>
+            <a href="#"><div class="but" style="position:absolute;left:1120px;top:785px;">Accept</div></a>
+        </div>
+        <script>
+            var a=document.getElementsByClassName("but");
+            for(i=0;i<a.length;i++)
+            {
+                a[i].addEventListener("click",fun);
+            }
+            function fun() {
+                for(i=0;i<a.length;i++)
+                {
+                    if(this==a[i]) break;
+                }
+                a[i].innerHTML="Accepted";
+                a[i].style.width="120px";
+                a[i].style.backgroundColor="Tomato";
+                a[i].style.borderColor="Tomato";
+            }
+        </script>
+    </body>
+</html>

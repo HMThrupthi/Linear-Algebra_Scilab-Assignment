@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" src="style.css">
+<style>
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('logo1.jpg');
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('logo1.jpg');
+  
+   /* Full height */
+  height: 100%; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1{
+  background-image: url('hands.jpg');
+	height:700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2{
+  background-image: url('par.png');
+	height:700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home1{
+  font-family: Lucida Sans;
+  font-style:oblique;
+  position:relative;
+  float:right;
+  right:8px;
+  color:rgb(11, 39, 131);
+  font-size: 25px;
+}
+
+#home2{
+  font-family: Lucida Sans;
+  font-style:oblique;
+  position:relative;
+  left:10px;
+  top:300px;
+  color:rgb(11, 39, 131);
+  font-size: 25px;
+}
+
+#home3{
+  font-family: Lucida Sans;
+  font-weight:bold;
+  position:relative;
+  left:30px;
+  top:250px;
+  color:white;
+  font-size: 50px;
+}
+
+#homehead{
+  font-family: Lucida Sans;
+  font-style:normal;
+  color:black;
+  font-size:32px;
+}
+#homebutton1{
+  position:relative;
+  background-color:rgb(17, 187, 59);
+  font-family: Tahoma;
+  font-size:25px;
+  padding:2px;
+  text-align: center;
+  border-radius:10px;
+  color:white;
+  width:120px;
+  height:40px;
+  left:60px;
+  top:300px;
+}
+
+#homebutton2{
+  position:relative;
+  background-color:rgb(17, 187, 59);
+  font-family: Tahoma;
+  font-size:25px;
+  padding:2px;
+  text-align: center;
+  border-radius:10px;
+  color:white;
+  width:120px;
+  height:40px;
+  left:120px;
+  top:300px;
+}
+#homebutton1:hover{
+  background-color:rgb(5, 109, 31);
+}
+
+#homebutton2:hover{
+  background-color:rgb(5, 109, 31);
+}
+
+a{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="skillcollab.png" style="float:left;height:48px;width:600px;"/>
+              </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home" ></span> Home</a></li>
+            <li><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+<div class="parallax"></div>
+<div class="parallax1"><br/><br/>
+  <div id="home1"><br/><b id="homehead">Why SkillCollab?</b><br/>Connect with passionate   <br/>individuals and explore talent   <br/>from all over the world  </div>
+  <div id="home2"><br/><b id="homehead">What can I do here?</b><br/>Seek out talent<br/>Offer up your own<br/>Create and collaborate</div>
+</div>
+<div class="parallax2">
+  <div id="home3"> Start Exploring.</div>
+  <a href="signup.php"><button type="button" id="homebutton1" class="btn btn-success">Sign Up</button></a>
+  <a href="login.php"><button type="button" id="homebutton2" class="btn btn-success">Log In</button></a>
+</div>
+</body>
+</html>
+

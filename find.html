@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Looking For A Skill</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <img src="skillcollab.png" style="float:left;height:48px;width:1000px;"/>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Logout</a>
+        </div>
+        <br/><br/><br/><br/><br/><br/>
+        <div style="font-size:20px; font-family:Courier New;">
+            <b><span style="font-family:Lucida Sans;">Search For A Skill:</span></b> <input type="text" name="search" id="search" placeholder="Enter here..."/>
+            <img src="search.png" id="p1" style="position: absolute;left:400px;top:105px;height:30px; width:30px;"/>
+            <div id="find1" style="position: absolute;left:500px;top:110px;height:30px; width:30px;font-weight:bold;display:none;">Loading...</div>
+        </div>
+        <br/><br/><br/>
+        <div id="m1">
+            <div class="req">
+                <img class="p01" src="p1.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:210px;">Name: <span class="lala1"></span></span>
+                <span style="position:absolute;left:120px;top:240px;">Specialisation: <span class="lala2"></span></span>
+                <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:195px;">View Profile</div></a>
+        </div>
+        <br/>
+        <div class="req">
+                <img class="p01" src="p2.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:330px;">Name: <span class="lala1"></span></span>
+                <span style="position:absolute;left:120px;top:360px;">Specialisation: <span class="lala2"></span></span>
+                <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:315px;">View Profile</div></a>
+        </div>
+        <br/>
+        <div class="req">
+                <img class="p01" src="p3.jpg" width="100px" height="100px" style="opacity:1;"/>
+                <span style="position:absolute;left:120px;top:450px;">Name: <span class="lala1"></span></span>
+                <span style="position:absolute;left:120px;top:490px;">Specialisation: <span class="lala2"></span></span>
+                <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:435px;">View Profile</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img class="p01" src="p4.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:560px;">Name: <span class="lala1"></span></span>
+            <span style="position:absolute;left:120px;top:600px;">Specialisation: <span class="lala2"></span></span>
+            <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:550px;">View Profile</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img class="p01" src="p5.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:680px;">Name: <span class="lala1"></span></span>
+            <span style="position:absolute;left:120px;top:710px;">Specialisation: <span class="lala2"></span></span>
+            <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:670px;">View Profile</div></a>
+        </div>
+        <br/>
+        <div class="req">
+            <img class="p01" src="p6.jpg" width="100px" height="100px" style="opacity:1;"/>
+            <span style="position:absolute;left:120px;top:800px;">Name: <span class="lala1"></span></span>
+            <span style="position:absolute;left:120px;top:830px;">Specialisation: <span class="lala2"></span></span>
+            <a href="profile.html"><div class="but1" style="position:absolute;left:1120px;top:785px;">View Profile</div></a>
+        </div>
+        </div>
+        <script>
+            var a=document.getElementById("p1");
+            a.addEventListener("click",fun2);
+            function fun2(){
+            var e=document.getElementById("find1");
+            e.style.display="block";
+            setTimeout(fun, 1000);
+            }
+            function fun() {
+                var e=document.getElementById("find1");
+                e.style.display="none";
+                var b=document.getElementById("m1");
+                var c=document.getElementById("search");
+                if(c.value=="Programmer" || c.value=="programmer")
+                {
+                    var d=document.getElementsByClassName("lala1");
+                    d[0].innerHTML="Robert Downey Jr";
+                    d[1].innerHTML="Hugh Jackman";
+                    d[2].innerHTML="Ben Affleck";
+                    d[3].innerHTML="Gal Gadot";
+                    d[4].innerHTML="Brad Pitt";
+                    d[5].innerHTML="Stan Lee";
+                    d=document.getElementsByClassName("lala2");
+                    d[0].innerHTML="Python Programmer";
+                    d[1].innerHTML="C Programmer";
+                    d[2].innerHTML="Java Programmer";
+                    d[3].innerHTML="C Programmer";
+                    d[4].innerHTML="Java Programmer";
+                    d[5].innerHTML="Python Programmer";
+                    d=document.getElementsByClassName("p01");
+                    d[0].src="p2.jpg";
+                    d[1].src="p4.jpg";
+                    d[2].src="p1.jpg";
+                    d[3].src="p3.jpg";
+                    d[4].src="p6.jpg";
+                    d[5].src="p5.jpg";
+                    m1.style.display="block";
+                }
+                else if(c.value=="Illustrator" || c.value=="illustrator")
+                {
+                    var d=document.getElementsByClassName("lala1");
+                    d[0].innerHTML="Tom Cruise";
+                    d[1].innerHTML="Angelina Jolie";
+                    d[2].innerHTML="Ryan Reynolds";
+                    d[3].innerHTML="Benedict Cumberbatch";
+                    d[4].innerHTML="Ezra Miller";
+                    d[5].innerHTML="Bradley Cooper";
+                    d=document.getElementsByClassName("lala2");
+                    d[0].innerHTML="Adobe Illustrator";
+                    d[1].innerHTML="Photoshop";
+                    d[2].innerHTML="Comic Strip Illustrations";
+                    d[3].innerHTML="Video Editing";
+                    d[4].innerHTML="Adobe XD";
+                    d[5].innerHTML="Sketch Artist";
+                    m1.style.display="block";
+                }
+                else if(c.value=="Photographer" || c.value=="photographer")
+                {
+                    var d=document.getElementsByClassName("lala1");
+                    d[0].innerHTML="Tom Cruise";
+                    d[1].innerHTML="Angelina Jolie";
+                    d[2].innerHTML="Ryan Reynolds";
+                    d[3].innerHTML="Benedict Cumberbatch";
+                    d[4].innerHTML="Ezra Miller";
+                    d[5].innerHTML="Bradley Cooper";
+                    d=document.getElementsByClassName("lala2");
+                    d[0].innerHTML="Portfolio Photographer";
+                    d[1].innerHTML="Nature Photographer";
+                    d[2].innerHTML="Touch Up Artist";
+                    d[3].innerHTML="Mobile Phone Photographer";
+                    d[4].innerHTML="Wedding Photographer";
+                    d[5].innerHTML="Animal Photographer";
+                    d=document.getElementsByClassName("p01");
+                    d[0].src="p6.jpg";
+                    d[1].src="p5.jpg";
+                    d[2].src="p4.jpg";
+                    d[3].src="p3.jpg";
+                    d[4].src="p2.jpg";
+                    d[5].src="p1.jpg";
+                    m1.style.display="block";
+                }
+            }
+            /*
+            var b=document.getElementsByClassName("but");
+            for(i=0;i<b.length;i++)
+            {
+                b[i].addEventListener("click",fun1);
+            }
+            function fun1() {
+                for(i=0;i<a.length;i++)
+                {
+                    if(this==a[i]) break;
+                }
+                b[i].innerHTML="Requested";
+                b[i].style.width="120px";
+                b[i].style.backgroundColor="crimson";
+                b[i].style.borderColor="crimson";
+            }
+            */
+        </script>
+    </body>
+</html>

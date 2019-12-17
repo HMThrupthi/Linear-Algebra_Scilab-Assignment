@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="topnav">
+    <img src="skillcollab.png" style="float:left;height:48px;width:1000px;"/>
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
+<a href="#">About</a>
+<a href="index.html">Logout</a>
+</div>
+<br/><br/><br/>
+<h1 style="text-align:center;text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+">User Profile</h1>
+
+<div style="font-family:Tahoma; width:400px;font-size:20px;position:absolute;left:20px;height:500px;"
+<p><b id="profile1">Name: </b><span id="div2">Angelina Jolie</span></p>
+<p><b id="profile1">Address: </b>Benagaluru,India</p>
+<p><b id="profile1">Interests: </b><span id="div4">Illustrating,Programming</span></p>
+<p><b id="profile1">Previous Experience:</b>
+<br>
+<dl>
+    <dt>Comic Strip Illustrating</dt>
+    <dd><b>Means:</b>Offered the skill</dd>
+    <dd><b>During:</b>Aug 2019</dd>
+    <dt>Video Editing</dt>
+    <dd><b>Means:</b>Offered the skill</dd>
+    <dd><b>During:</b>Sep 2019</dd>
+  </dl>
+</p>
+
+<p><b id="profile1">Current Status:</b><br>Looking for C programmer
+<br/>Working on PES Editorial Board Collaboration</p>
+<p><b id="profile1">Reviews: </b><span id="div3">Hardworking,Coding enthusiast</span></p>
+<div class="card">
+  <img src="p2.jpg" id="div1" alt="Angelina Jolie" style="width:100%;border:2px solid black;">
+  <p>Angelina Jolie<p>
+  <p class="title">Software Engineer</p>
+  <p>IBM</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button id=" button1">Contact:7619255655<br/>Mail-id:angelinaj36@gmail.com</button></p>
+</div>
+<script>
+
+$('#div1').hover(fun1,fun2);
+
+function fun1() {
+  $('#div2').css('color','rgb(235, 14, 80)');
+  $('#div3').css('color','rgb(235, 14, 80)');
+  $('#div4').css('color','rgb(235, 14, 80)');
+}
+
+function fun2() {
+  $('#div2').css('color','black');
+  $('#div3').css('color','black');
+  $('#div4').css('color','black');
+}
+</script>
+</body>
+</html>
