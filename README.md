@@ -1,1 +1,1 @@
-#1st Scilab Assignment#
+# Scilab Assignment
